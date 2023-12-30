@@ -6,7 +6,9 @@
   "scripts": {
     "start": "ts-node index.ts",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --config .prettierrc './*.ts' --check",
+    "format:fix": "prettier --config .prettierrc './*.ts' --write"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +20,8 @@
     "@typescript-eslint/eslint-plugin": "^6.16.0",
     "@typescript-eslint/parser": "^6.16.0",
     "eslint": "^8.56.0",
+    "eslint-plugin-sonarjs": "^0.23.0",
+    "prettier": "^3.1.1",
     "typescript": "^5.3.3"
   }
 }
